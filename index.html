@@ -19,9 +19,32 @@
             <p id="cartEmpty">Cart is empty</p>
             <ul id="cartItems"></ul>
             <p class="total">Total: <span id="totalPrice">0</span> gold</p>
+            <br>
+            <button class="buy">Buy all</button>
         </div>
     </div>
 </header>
+
+
+
+<div class="modal" id="orderModal">
+    <div class="modal-content">
+        <h2>Order summary</h2>
+
+        <ul id="orderItems"></ul>
+        <p><b>Total: <span id="orderTotal">0</span> gold</b></p>
+
+        <input type="text" id="name" placeholder="Your name">
+        <input type="text" id="address" placeholder="Your address">
+        <input type="tel" id="phone" placeholder="Phone number">
+
+        <div class="modal-buttons">
+            <button onclick="sendOrder()">Confirm order</button>
+            <button class="cancel" onclick="closeModal()">Cancel</button>
+        </div>
+    </div>
+</div>
+
 
 <main>
     <div class="products-grid" id="products"></div>
